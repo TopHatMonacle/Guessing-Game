@@ -60,6 +60,7 @@ int main()
                 std::cout << "Your guess is less than our number.\nPlease try again.\n";
             }
         
+            // Winning logic, used if you guess the correct number.
             else if (guess == randnum)
             {
                 std::cout << "Congratulations!\nIt took you " << tries <<  " tries to guess my number.\n";
@@ -108,7 +109,7 @@ int main()
         
         /* Used 'tries--' here because it adds a try by default. 
         It doesn't punish you for inputting an incorrect input. 
-        There is an additional clause with the death logic to avoid penalisation. */
+        There is an additional clause within the death logic to avoid penalisation. */
         else
         {
             std::cout << "That was an invalid input.\nPlease try again.\n";
